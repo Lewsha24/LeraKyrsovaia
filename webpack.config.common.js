@@ -69,6 +69,12 @@ module.exports = {
                 use: 'ts-loader',
                 exclude: /node_modules/,
             },
+            // Работа с картинками (Не знаю, работает ли это вообще))) )
+            {
+                test: /\.(png|jpg|jpeg|gif)$/i,
+                use: ['file-loader'],
+                // type: 'asset/resource',
+            }
         ],
     },
 }

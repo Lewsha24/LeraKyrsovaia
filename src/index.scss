@@ -3,9 +3,158 @@
     src: url('./fonts/Roboto-Black.ttf');
 }
 
+$mainHoverTextColor: #FF6E00;
+$mainBackground: #f5f5f5;
+$mainTextColor: black;
 
 body {
-    font-family: 'Roboto', sans-serif;
-    max-width:960px;
-    margin: 1rem auto;
+    background-color: #f5f5f5 !important;;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+h3.table_name_creator_site {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    padding-top: 20px;
+    display: block;
+    margin-top: 30%;
+    width: 100%;
+    background: #efefef;
+    .info_footer {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.portfolio {
+    border: 1px solid black;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.block_enterpriser {
+    width: 100%;
+    display: flex;
+    padding: 4% 4%;
+    background: white;
+    border: 1px solid black;
+    border-radius: 60px;
+    margin: 0 auto;
+
+    h5 {
+        color: black;
+    }
+
+    p {
+        color: black;
+    }
+
+}
+.stocks {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin-top: 5%;
+    text-align: center;
+}
+.advantages_block {
+    width: 100%;
+    margin-top: 3%;
+    .block {
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 4% 4%;
+        color: black;
+        .profit {
+            color: green;
+            font-weight: 600;
+            margin: 0;
+        }
+    }
+}
+
+.header_advantages {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.button_free {
+    border: 2px solid #1010bb;
+    border-radius: 50px;
+    background-color: white;
+    font-size: 30px;
+    color: #1010bb;
+    padding: 2% 2%;
+    margin: 0 auto;
+}
+
+.info_empty {
+    color: black;
+
+    span {
+        font-weight: 700;
+    }
+
+}
+
+
+.catalog-header {
+
+    a {
+        color: $mainTextColor;
+        text-decoration: none;
+        
+        &:hover {
+            color: $mainHoverTextColor;
+        }
+    }
+}
+
+
+.transition {
+    transition: 3ms;
+}
+
+.block_sale {
+    display: flex;
+    width: 100%;
+    height: 340px;
+    border-radius: 20px;
+}
+
+span.sale_text {
+    text-align: center;
+    h4 {
+        color: black;
+        margin: 3% 0;
+    }
+    p {
+        color: #9F9F9E;
+        margin: 3% 0;
+    }
+}
+
+.block_service {
+    background: #f2f2f2;
+    padding: 5%;
+    border-radius: 20px;
+    box-shadow: 2px 6px 10px 5px black;
+    .block_img {
+
+    }
+
+    p {
+        margin: 0;
+        margin-top: 2%;
+        font-size: 1.2rem;
+    }
 }
