@@ -39,16 +39,10 @@ const App = () => {
          <Route path="/sale" element={<SaleComponent/>} />
          <Route path="/service" element={<ServiceComponent/>} />
          <Route path="/shop" element={<ShopComponent/>} />
-         // Обувь
          <Route path="/shop/shoes" element={<ShoesComponent/>} />
-         // Стельки
-
-         // Информация о обуви
          <Route path="/shop/shoes/:id" element={<InfoContentComponent/>} />
          <Route path="/shop/inoses" element={<InosesComponent/>} />
-         // Информация о стельках
-         <Route path="/shop/inoses/:id" element={<InfoContentComponent/>} />
-
+         <Route path="/shop/inoses/:id" element={<InfoContentComponent/>}
          <Route path="/shop/pilow" element={<Pilow/>} />
          <Route path="/shop/vitamins" element={<Vitamins/>}/>
          {/*Not page 404*/}
